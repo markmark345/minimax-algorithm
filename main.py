@@ -33,3 +33,8 @@ def avaliable_position(self):
         if checkMove == ' ' :
             moves.append(i)
     return move
+
+def mark(self,marker,pos):
+    self.board[pos] = marker
+    self.lastmoves.append(pos)
+
