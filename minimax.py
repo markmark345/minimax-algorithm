@@ -19,4 +19,15 @@ class Minimax:
         for move in gi.avaliable_position():
             gi.mark(self.marker, move)
 
-            if gi.end_game()
+            if gi.end_game():
+                score = self
+
+    def get_score(self, gi):
+        if gi.end_game():
+            if gi.winner  == self.marker:
+                return 1
+            
+            elif gi.winner == self.opponentmarker:
+                return -1
+        
+        return 0
